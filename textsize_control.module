@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Main module file for textsize_control.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function textsize_control_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'textsize_control/textsize';
+}

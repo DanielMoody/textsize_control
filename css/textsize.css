@@ -1,0 +1,74 @@
+/* --- Core variables --- */
+:root {
+  --text-scale: 1;
+}
+
+/* --- Primary scaling (rem-based themes) --- */
+html {
+  font-size: calc(16px * var(--text-scale));
+  transition: font-size 0.15s ease;
+}
+
+/* --- Global readability fixes --- */
+body {
+  line-height: calc(1.4 * var(--text-scale));
+  word-break: break-word;
+}
+
+/* Reinforce line-height for common elements */
+.textsize-mode-root p,
+.textsize-mode-root li,
+.textsize-mode-root div,
+.textsize-mode-root span,
+.textsize-mode-root a {
+  line-height: calc(1.4 * var(--text-scale));
+}
+
+/* --- Fallback: class-based scaling (for px-heavy themes) --- */
+.textsize-mode-class p,
+.textsize-mode-class li,
+.textsize-mode-class div,
+.textsize-mode-class span,
+.textsize-mode-class a {
+  font-size: calc(1em * var(--text-scale));
+  line-height: calc(1.4 * var(--text-scale));
+}
+
+/* --- Last resort: transform scaling --- */
+.textsize-mode-transform {
+  transform: scale(var(--text-scale));
+  transform-origin: top left;
+  width: calc(100% / var(--text-scale));
+}
+
+/* --- Optional: prevent absurd scaling extremes --- */
+html {
+  font-size: clamp(14px, calc(16px * var(--text-scale)), 28px);
+}
+
+/* --- UI Controls --- */
+.textsize-controls {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #222;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 4px;
+  z-index: 1000;
+  display: flex;
+  gap: 4px;
+}
+
+.textsize-controls button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.textsize-controls button:hover {
+  background: #666;
+}

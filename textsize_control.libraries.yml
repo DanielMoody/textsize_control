@@ -1,0 +1,9 @@
+textsize:
+  css:
+    theme:
+      css/textsize.css: {}
+  js:
+    js/textsize.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
