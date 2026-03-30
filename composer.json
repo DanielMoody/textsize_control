@@ -2,7 +2,7 @@
   "name": "cms_alchemy/textsize_control",
   "description": "Drupal module providing dynamic user-controlled text scaling with intelligent fallback strategies.",
   "type": "drupal-module",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "CMS Alchemy"
