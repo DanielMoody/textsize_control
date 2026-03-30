@@ -5,7 +5,10 @@ A lightweight Drupal module that provides user-adjustable text scaling with inte
 This module adds a small floating UI (`A- / A / A+`) that allows users to dynamically adjust text size across the site. It is designed to work across a wide range of themes, including those that rely on `rem`, `em`, or fixed `px` units.
 
 ---
+## Installation
+Install via Composer:
 
+`composer require cms-alchemy/textsize-control`
 ## Features
 
 - Persistent text scaling via `localStorage`
