@@ -6,7 +6,6 @@ This module adds a small floating UI (`A- / A / A+`) that allows users to dynami
 
 ---
 ## Installation
-Install via Composer:
 ```
 composer require cms-alchemy/textsize-control
 drush en textsize_control
